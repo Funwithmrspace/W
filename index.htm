@@ -82,8 +82,8 @@
         onValue(sensorRef, (snapshot) => {
             const data = snapshot.val();
             if(data) {
-                document.getElementById("temp-display").innerHTML = data.humidity.toFixed(1) + " &deg;C";
-                document.getElementById("humid-display").innerHTML = data.temperature.toFixed(1) + " %";
+                document.getElementById("humid-display").innerHTML = data.humidity.toFixed(1) + " %";
+                document.getElementById("temp-display").innerHTML = data.temperature.toFixed(1) + " &deg;C";
             }
         });
     </script>
