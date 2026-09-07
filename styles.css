@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    width: 100%;
+    padding-top: 40px;
+ }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: -1px 1px 1px 0px rgba(114, 111, 111, 0.45);
+}
+
+.banner {
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+}
+
+.login {
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+}
+
+.backgroundbox {
+    background-color: rgba(242, 248, 252);
+    padding-top: 10px;
+    padding-bottom: 100px;
+    margin: 20px auto;
+    width: 100%;
+    
+}
+.tite {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 3px;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+.tite h1{
+    margin: 0;
+}
+
+.titel.info {
+    text-align: center;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.mainmainconten{
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    padding: 20px;
+    padding-top: 0px;
+}
+.mainmainconten table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.wmainmainconten th, .mainmainconten td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.mainmainconten th {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 600;
+    background-color: #f1f5f9;
+    padding: 12px;
+    border-radius: 2px;
+}
