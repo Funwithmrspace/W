@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
-    <title>Weather Report</title>
+    <title>Clock</title>
 </head>
 <body>
     <header>
@@ -45,14 +45,43 @@
             <p>Disini merupakan kondisi ruangan kelas SMA dibuat oleh Kelompok 5</p>
         </div>
     </div>
-    <div class="mainmainconten">
-        <table class="table">
-            <thead>
+<div class="mainmainconten">
+    <table class="table">
+        <thead>
+            <tr>
                 <th>Kelas</th>
-                <th>Suhu</th>
-                <th>Kelembapan</th>
-                <th>Kualitas Udara</th>
+                <th>
+                    <span class="hover-container">
+                        Suhu
+                        <div class="hover-box">
+                            <p>Good = 20-30°C</p>
+                            <p>Mediocre = 31-35°C</p>
+                            <p>Bad = >35°C</p>
+                        </div>
+                    </span>
+                </th>
+                <th>
+                    <span class="hover-container">
+                        Kelembapan
+                        <div class="hover-box">
+                            <p>Good = 30-70%</p>
+                            <p>Mediocre = 70-85%</p>
+                            <p>Bad = 85-100%</p>
+                        </div>
+                    </span>
+                </th>
+                <th>
+                    <span class="hover-container">
+                        Kualitas Udara
+                        <div class="hover-box">
+                            <p>Good = 0-1500%</p>
+                            <p>Mediocre = 1500-2500%</p>
+                            <p>Bad = >2500%</p>
+                        </div>
+                    </span>
+                </th>
                 <th>Overall Quality</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -69,8 +98,17 @@
                     <td>0.0%</td>
                     <td>-</td>
                 </tr>
+                <tr>
+                    <td>XI-5</td>
+                    <td>0.0°C</td>
+                    <td>0.0%</td>
+                    <td>0.0%</td>
+                    <td>-</td>
             </tbody>
         </table>
+    </div>
+    <div class="explanation">
+        <p><b>Penjelasan</b></p>
     </div>
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";

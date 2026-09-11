@@ -88,3 +88,39 @@ header {
     padding: 12px;
     border-radius: 2px;
 }
+.explanation {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.hover-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.hover-container .hover-box {
+    visibility: hidden;
+    opacity: 0;
+    width: 150px;
+    background-color: #f1f5f9;
+    color: #64748b;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+  
+    position: absolute;
+    z-index: 1;
+    top: 120%; 
+    left: 50%;
+    transform: translateX(-50%); 
+  
+    transition: opacity 0.3s ease;
+}
+.hover-container:hover .hover-box {
+    visibility: visible;
+    opacity: 1;
+}
